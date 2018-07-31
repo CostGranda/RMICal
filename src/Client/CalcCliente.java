@@ -22,7 +22,7 @@ import java.util.logging.Logger;
  */
 public class CalcCliente {
     static CalcInterface c;
-    public void main(String[] args) throws RemoteException, IOException{
+    public static void main(String[] args) throws RemoteException, IOException{
         try {
             c = (CalcInterface) Naming.lookup("Calc");
             int n1, n2, choice, res;
